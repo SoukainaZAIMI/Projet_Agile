@@ -1,2 +1,2 @@
 # Projet_Agile
-Développement d'un avec Unity
+Développement d'un jeu avec Unity
