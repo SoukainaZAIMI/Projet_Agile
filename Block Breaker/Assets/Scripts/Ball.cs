@@ -4,8 +4,8 @@ public class Ball : MonoBehaviour {
 
     // config params
     [SerializeField] Paddle paddle1;
-    [SerializeField] float xPush = 2f;
-    [SerializeField] float yPush = 15f;
+    [SerializeField] float xPush = 0.2f;
+    [SerializeField] float yPush = 0.2f;
     [SerializeField] AudioClip[] ballSounds;
     [SerializeField] float randomFactor = 0.2f;
 
@@ -53,7 +53,7 @@ public class Ball : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Vector2 velocityTweak = new Vector2
-            (randomFactor, randomFactor); 
+            (0f, 0.2f); 
 
         if (hasStarted)
         {
